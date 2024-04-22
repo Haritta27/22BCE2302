@@ -152,6 +152,12 @@
   background-color: #45a049;
   transform: scale(1.2); /* Enlarge the button by 20% on hover */
 }
+.arrow-icon {
+  display: inline-block;
+  margin-left: 5px; /* Adjust margin as needed */
+  color: #000; /* Adjust color as needed */
+}
+
   </style>
 </head>
 <body>
@@ -165,7 +171,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="mainrecycle.html">Recycle</a></li>
       <li><a href="reuse.html">Reuse</a></li>
-      <li><a href="#">Donate Hub</a></li>
+      <li><a href="donatehub.html">Donate Hub</a></li>
       <li><a href="index.html#ABOUT">About</a></li>
     </ul>
   </nav>
@@ -190,9 +196,9 @@
         <img src="image6.jpg" alt="Image 3">
     </div>
   <div class="container">
-    <br><br><br><br><button class="section-button" onclick="showSection('plastic')">Plastic Reuse Ideas</button>
-    <button class="section-button" onclick="showSection('paper')">Paper Reuse Ideas</button>
-    <button class="section-button" onclick="showSection('fabric')">Fabric Reuse Ideas</button>
+    <br><br><br><br>  <button class="section-button" onclick="showSection('plastic')">Plastic Reuse Ideas</button><span class="arrow-icon">&#9660;</span>
+    <button class="section-button" onclick="showSection('paper')">Paper Reuse Ideas</button><span class="arrow-icon">&#9660;</span>
+    <button class="section-button" onclick="showSection('fabric')">Fabric Reuse Ideas</button><span class="arrow-icon">&#9660;</span>
     <div id="plastic-ideas" class="ideas-container">
       <h2>Plastic Waste Reuse Ideas</h2>
       <img class="idea-image" src="plastic_image.png" alt="Plastic Reuse Idea"><br>
@@ -248,6 +254,7 @@ var slideIndex = 0;
       slides[slideIndex - 1].style.display = "block";
       setTimeout(showSlides, 2500); 
 }
+
   </script>
 </body>
 </html>
